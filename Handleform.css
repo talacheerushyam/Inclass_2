@@ -21,26 +21,26 @@ h1{
 	
 }
 
-.titleTD{
+.title{
 	font-weight:bold;
 	text-align: right;
 }
 
-.dataTD{
+.data{
 	text-align: left;
 }
 
-.submitBtn{
+.submitButton{
 	font-weight:bold;
 	text-align: right;
 }
 
-.resetBtn{
+.resetButton{
 	font-weight:bold;
 	text-align: left;
 }
 
-.mainP{
+.Output{
 	font: normal;
 	font-family: serif;
 	text-align: center;
