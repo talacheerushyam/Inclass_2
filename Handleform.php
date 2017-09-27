@@ -1,28 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE unspecified PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
-    <head>
-        
-        <title>In Class Exercise</title>
-        
-        <link rel="stylesheet" href="Handleform.css" type="text/css" />
-        
-    </head>
-    <body>
-        <?php
-        $title = $_POST['title'];
-        $firstname = $_POST['firstname'];
-        $middlename=$_POST['middlename'];
-        $surname = $_POST['surname'];
-        $address = $_POST['address'];
-        $birthyear = $_POST['birthyear'];
-        $thisyear = date(Y);
-        $age = $thisyear - $birthyear;
+<head>
+<title>Welcome Page</title>
+<link rel="stylesheet" type="text/css" href="Handleform.css"/>
+<?php 
+$title = $fname = $mname = $faname = $address = $yob=  "";
 
-        print '<p>"Hello ' . "$title $firstname $midlename $surname" . ', lives at ' . "$address\".</p>";
-        
-        print '</p>You are ' . "$age" . ' this year.</p>';
-			
-			?>
+$title = trim($_POST['title']);
+$fname = trim($_POST['first_name']);
+$mname = trim($_POST['middle_name']);
+$faname = trim($_POST['family_name']);
+$address = trim($_POST['address']);
+$yob = trim($_POST['yob']);
 
-    </body>
+?>
+</head>
+<body>
+	<form action="" method="GET">
+	<p class="mainP">
+		Hello <?php echo $_POST['title']." ". $_POST['first_name'] ." " .$_POST['middle_name'] ." ".$_POST['family_name']." ".$_POST['address']?>
+		<br/>
+		<?php echo 'you will be '.(2017 - $_POST['yob'])." " ."this year"?>
+	</p>
+	</form>
+</body>
 </html>

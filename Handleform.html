@@ -1,35 +1,83 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-      
-    <title>In Class Exercise</title>
-      
-      <link href="Handleform.css" type="text/css" rel="stylesheet">
-      
-  </head>
 
-  <body>
-	<h1>In-class lab</h1>
-    <form action="Handleform.php" method="post">
-    <p>Title<select name="title">
-		<option value="Mr">Mr</option>
-		<option value="Mrs">Mrs</option>
-		<option value="Ms">Ms</option>
-		<option value="Dr">Dr</option>
-		<option value="Prof">Prof</option>
-		</select>
-    <p>First name:
-    <input name="firstname" type="text" size="20" />
-    Middle name:
-    <input name="middlename" type="text" size="20" /></p>
-    <p>Family name:</p>
-    <p><input name="surname" type="text" size="20" /></p>
-    <p>Address:</p>
-    <p><textarea name="address" cols="20" rows="4"></textarea></p>
-	<p>year of birth:</p>
-	<p><input name="birthyear" type="text" size="20" /></p>
-    <p><input type="submit" value="submit" name="submit" />
-	<input type="reset" value="reset" name="reset" /></p>
-  </form>
-  </body>
+<!doctype unspecified PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="Handleform.css"/>
+</head>
+
+<body>
+	<form action="Handleform.php" method="POST">
+	<h1> Web Design Inclass Exercise PHP</h1>
+		<div class="mainDiv">
+			<table>
+				<tr>
+					<td class="titleTD">
+						TITLE : 
+					</td>
+					<td class="dataTD">
+						<select name="title">
+						  <option value="Mr">Mr</option>
+						  <option value="Mrs">Mrs</option>
+						  <option value="Ms">Ms</option>
+						  <option value="Dr">Dr</option>
+						  <option value="Prof">Prof</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="titleTD">
+						FIRST NAME : 
+					</td>
+					<td class="dataTD">
+						<input type="text" name="first_name">
+					</td>
+				</tr>
+				<tr>
+					<td class="titleTD">
+						MIDDLE NAME : 
+					</td>
+					<td class="dataTD">
+						<input type="text" name="middle_name">
+					</td>
+				</tr>
+				<tr>
+					<td class="titleTD">
+						FAMILY NAME : 
+					</td>
+					<td class="dataTD">
+						<input type="text" name="family_name">
+					</td>
+				</tr>
+				<tr>
+					<td class="titleTD">
+						ADDRESS : 
+					</td>
+					<td class="dataTD">
+						<textarea name="address" rows="4" cols="18">
+						</textarea>
+					</td>
+				</tr>	
+				<tr>
+					<td class="titleTD">
+						YEAR OF BIRTH : 
+					</td>
+					<td class="dataTD">
+						<input type="text" name="yob">
+					</td>
+				</tr>
+				<tr>
+					<td class="submitBtn">
+					<br/>
+						<input type="submit">
+					</td>
+					<td class="resetBtn">
+					<br/>
+						<input type="reset">
+					</td>
+				</tr>
+				</table>
+		</div>
+	</form>
+</body>
 </html>
